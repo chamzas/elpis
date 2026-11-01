@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="el">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Η σελίδα δεν βρέθηκε | Ελπίδα Αντωνοπούλου</title>
+<meta name="robots" content="noindex">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23134e5e'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' font-weight='700' text-anchor='middle' fill='%23e3f3ef'%3EEA%3C/text%3E%3C/svg%3E">
+<style>
+  :root { --bg: #f6faf9; --ink: #1b2a2e; --muted: #5a6b6e; --brand: #134e5e; --accent: #1f8a7a; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0b1416; --ink: #e3eeec; --muted: #93aaa6; --brand: #8fd3c7; --accent: #5cc4b4; } }
+  html, body { height: 100%; margin: 0; }
+  body { display: grid; place-items: center; background: var(--bg); color: var(--ink); font: 16px/1.6 system-ui, sans-serif; padding: 24px; }
+  main { max-width: 520px; text-align: center; }
+  .code { font: 700 clamp(4rem, 14vw, 7rem)/1 Georgia, serif; color: var(--brand); letter-spacing: -.03em; }
+  h1 { font: 600 1.4rem Georgia, serif; margin: 12px 0 6px; }
+  p { color: var(--muted); margin: 0 0 22px; }
+  a { display: inline-block; padding: 10px 20px; border-radius: 999px; background: var(--brand); color: var(--bg); text-decoration: none; font-weight: 600; }
+  a:hover { background: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <div class="code">404</div>
+  <h1>Η σελίδα δεν βρέθηκε · Page not found</h1>
+  <p>Η σελίδα που αναζητάτε δεν υπάρχει ή έχει μετακινηθεί.<br>The page you are looking for does not exist or has moved.</p>
+  <a href="./" id="home">Ελπίδα Αντωνοπούλου · Αρχική</a>
+</main>
+<script>
+  // On github.io project sites the home page lives under /<repo>/; on a custom domain it is /.
+  document.getElementById('home').href = location.hostname.endsWith('github.io') ? '/' + location.pathname.split('/')[1] + '/' : '/';
+</script>
+</body>
+</html>
